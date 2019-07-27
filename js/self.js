@@ -1,3 +1,12 @@
+/*
+ * @Author: ErioY
+ * @Email: 1973545559@qq.com
+ * @Date: 2019-07-27 09:35:17
+ * @Last Modified by:   ErioY
+ * @Last Modified time: 2019-07-27 09:35:17
+ * @Description: Description
+ */
+
 var aLi = document.getElementsByTagName("li");
 var oP = document.getElementsByTagName("p")[0];
 var aSpan = oP.getElementsByTagName("span");
@@ -46,14 +55,14 @@ function sum (aLi){
         arr.push(parseFloat(oEm.innerHTML));
         aSpan[2].innerHTML = max();
     }
+    
 }
 
 //最大值
 function max(){
     var iMax = 0;
-    var oStr = document.getElementsByTagName("strong")[0];
     for(var i=0;i<arr.length;i++){
-        if(iMax<arr[i] && oStr.innerHTML>0){
+        if(iMax<arr[i]){
             iMax = arr[i];
         }
     }
